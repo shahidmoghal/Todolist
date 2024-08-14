@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>My To-Do List</h1>
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Add a new task...">
+            <button id="addTaskBtn"><i class="fas fa-plus"></i></button>
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+
+    <!-- Modal for editing tasks -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Edit Task</h2>
+            <input type="text" id="editTaskInput">
+            <button id="saveTaskBtn">Save</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
